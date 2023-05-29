@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Home Reservation Form</title>
+  <link rel="stylesheet" href="reserva.css">
+  <script src="https://kit.fontawesome.com/6b4c89b0a1.js" crossorigin="anonymous"></script>
+  <script src="reserva.js"></script>
+ 
+</head>
+<body>
+
+  <div class="container"> 
+    <!-- Contenido del header -->
+   <div class="item header">
+        <header>
+            <div class="contenedor">
+            <nav>
+                <h2>Cabañas Cholila</h2>
+        <ul>
+            <li><a href="Pagina-principla.html">Inicio</a></li>
+            <li><a href="cabañas.html">Cabañas</a></li>
+            <li><a href="reserva.html">Reserva</a></li>
+            <li><a href="ubicacion.html">Ubicación</a></li>
+         </ul>
+       </nav>
+    </div>
+        </header>
+    </div>
+ 
+  </div>
+
+   
+</header>
+<main>
+  <div>                            
+  
+  <h1>Reserva de alquiler</h1>
+
+  <form action="reservation.php" method="post">
+   
+    <div class="form-group">
+      <label for="name">Nombre y Apellido</label>
+      <input type="text" id="name" name="name" placeholder="Juan Perez" required>
+    </div>
+    <div class="form-group">
+      <label for="email">E-mail</label>
+      <input type="email" id="email" name="email" placeholder="juan.perez@email.com" required>
+    </div>
+    <div class="form-group">
+      <label for="phone">Teléfono</label>
+      <input type="tel" id="phone" name="phone" placeholder="54-9-11-5555-5555" required>
+    </div>
+    <div class="form-group">
+      <label for="checkin-date">Entrada</label>
+      <input type="date" id="checkin-date" name="checkin-date" required>
+    </div>
+    <div class="form-group">
+      <label for="checkout-date">Salida</label>
+      <input type="date" id="checkout-date" name="checkout-date" required>
+    </div>
+    <div class="form-group">
+      <label for="guests">Huéspedes </label>
+      <input type="number" id="guests" name="guests" min="1" max="10" required>
+    </div>
+    <div class="form-group">
+      <input type="submit" value="Enviar">
+    </div>
+  </form>
+</div>
+
+
+
+<div class="item pie">
+    <footer>
+      <p><b>Seguinos en:</b></p>
+      <a href="https://www.instagram.com/">
+          <i class="fa-brands fa-instagram" style="font-size: 36px;"></i>
+          </a>
+          <a href="https://www.facebook.com/">
+          <i class="fa-brands fa-facebook-f"style="font-size: 36px;"></i>
+          </a>
+          <a href="https://www.linkedin.com/">
+          <i class="fa-brands fa-linkedin" style="font-size: 36px;"></i>
+          </a>
+          <a href="http://twitter.com/">
+          <i class="fa-brands fa-twitter" style="font-size: 36px;"></i>
+          </a>
+        </footer>
+</div>
+  
+  </main>
+</body>
+</html>
